@@ -160,7 +160,7 @@ def train(model,data,words,params):
                 cost = model.train_function(g1x, g2x, p1x, p2x)
 
                 if np.isnan(cost) or np.isinf(cost):
-                    print 'NaN detected'
+                    print ('NaN detected')
 
                 if(checkIfQuarter(uidx,len(kf))):
                     if(params.save):
@@ -185,13 +185,13 @@ def train(model,data,words,params):
             if(params.evaluate):
                 evaluate.evaluate_all(model,words)
 
-            print 'Epoch ', (eidx+1), 'Cost ', cost
+            //print 'Epoch ', (eidx+1), 'Cost ', cost
 
     except KeyboardInterrupt:
-        print "Training interupted"
+        print ("Training interupted")
 
     end_time = time.time()
-    print "total time:", (end_time - start_time)
+    #print "total time:", (end_time - start_time)
 
 def get_minibatches_idx(n, minibatch_size, shuffle=False):
     idx_list = np.arange(n, dtype="int32")
