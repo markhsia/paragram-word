@@ -185,7 +185,7 @@ def train(model,data,words,params):
             if(params.evaluate):
                 evaluate.evaluate_all(model,words)
 
-            //print 'Epoch ', (eidx+1), 'Cost ', cost
+            #print 'Epoch ', (eidx+1), 'Cost ', cost
 
     except KeyboardInterrupt:
         print ("Training interupted")
