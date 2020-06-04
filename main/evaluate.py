@@ -45,7 +45,7 @@ def evaluateWordSim(We, words):
 def evaluate_all(model,words):
     (corr, unk) = evaluateWordSim(model.all_params[0].get_value(),words)
     s="{0} {1} {2} {3} ws353 ws-sim ws-rel sl999".format(corr[0], corr[1], corr[2], corr[3])
-    print s
+    print( s)
 
 if __name__ == "__main__":
     (words, We) = utils.getWordmap('../data/glove_small.txt')
