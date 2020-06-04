@@ -147,7 +147,7 @@ def train(model,data,words,params):
     start_time = time.time()
     counter = 0
     try:
-        for eidx in xrange(params.epochs):
+        for eidx in range(params.epochs):
             kf = get_minibatches_idx(len(data), params.batchsize, shuffle=True)
             uidx = 0
             for _, train_index in kf:
