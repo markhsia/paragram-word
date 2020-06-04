@@ -5,7 +5,8 @@ from random import randint
 from random import choice
 from scipy.spatial.distance import pdist
 from scipy.spatial.distance import squareform
-import cPickle
+#import cPickle
+import _pickle as cPickle
 import time
 import sys
 
