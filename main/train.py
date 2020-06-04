@@ -69,8 +69,8 @@ examples = getData(params.train, words)
 if args.num_examples:
     examples = examples[0:args.num_examples]
 
-print "Number of training examples: ", len(examples)
-print sys.argv
+#print "Number of training examples: ", len(examples)
+#print sys.argv
 
 model = paragram_word_model(We, params)
 
