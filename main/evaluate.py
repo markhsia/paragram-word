@@ -49,4 +49,4 @@ def evaluate_all(model,words):
 
 if __name__ == "__main__":
     (words, We) = utils.getWordmap('../data/glove_small.txt')
-    print evaluateWordSim(We, words)
+    print( evaluateWordSim(We, words))
